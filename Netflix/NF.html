@@ -1,0 +1,417 @@
+<html>
+<title>Netflix-sign-in</title>
+<head>
+<style>
+body
+{
+margin:0px;
+}
+#MAIN
+{
+position:relative;
+width:100%;
+height:1100px;
+background:dodgerblue;
+background-image:url("NF.jpg");
+background-size:cover;
+background-position:center;
+}
+#nav
+{
+height:100px;
+width:100%;
+position:absolute;	
+}
+#I1
+{
+height:49px;
+width:158px;	
+position:absolute;
+left:160px;
+top:11px;
+padding:10px;
+}
+#M
+{
+height:835px;	
+width:100%;
+position:absolute;
+background:#0000004f;	
+background-image:linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.7) 100%);
+}
+.footer
+{
+background:rgb(0,0,0,0.90);
+width:100%;
+position:absolute;
+height:265px;
+top:835px;
+}
+#F1
+{
+position:absolute;
+top:100px;
+left:35%;
+width:455px;
+height:670px;
+background:rgb(0,0,0,0.90);
+}
+#P1
+{
+font-family:poppins;
+font-size:30px;
+color:white;
+margin-bottom:28px;
+font-weight:500;
+margin-left:15%;
+margin-top:55px;
+}
+#EM
+{
+width:70%;
+padding:15px;
+font-size:15px;
+background:#333;
+color:black;
+position:absolute;
+top:125px;
+left:15%;
+border-color:gray;
+border-radius:5px;
+}
+#PS
+{
+width:70%;
+padding:15px;
+font-size:15px;
+background:#333;
+color:black;
+position:absolute;
+top:200px;
+left:15%;
+border-color:gray;
+border-radius:5px;
+}
+#B1
+{
+width:70%;
+padding:15px;
+font-size:15px;
+background:rgb(193, 17, 25);
+color:white;
+position:absolute;
+top:285px;
+left:15%;
+border-color:gray;
+border-radius:5px;
+border-style:groove;
+}
+#B1:hover
+{
+background:rgb(210,25,35);
+color:white;
+}
+.CH
+{
+position:absolute;
+left:65px;
+width:18px;
+height:22px;
+top:345px;
+}
+.S1
+{
+color:#b3b3b3;
+font-family:poppins;
+font-size:13px;
+position:absolute;
+left:100px;
+top:350px;
+}
+#P2
+{
+position:absolute;
+color:#b3b3b3;
+font-family:poppins;
+font-size:13px;
+left:315px;
+top:335px;
+}
+#P2:hover
+{
+text-decoration:underline;
+}
+#P3
+{
+position:absolute;
+color:#b3b3b3;
+font-family:poppins;
+font-size:16px;
+left:70px;
+top:415px;
+}
+#P3 a
+{
+text-decoration:none;
+color:white;
+}
+#P3 a:hover
+{
+text-decoration:underline;
+}
+#P4
+{
+position:absolute;
+color:#b3b3b3;
+font-family:poppins;
+font-size:13px;
+left:70px;
+top:455px;
+margin-right:20px;
+}
+.footer h2
+{
+color:#b3b3b3;
+font-size:19px;
+font-weight:400;
+margin-bottom:45px;	
+margin-left:174px;
+}
+.footer a
+{
+text-decoration:none;
+color:#b3b3b3;
+}
+.footer a:hover
+{
+text-decoration:underline;
+}
+.footer .column1
+{
+flex-basis:25%;
+flex-grow:1;
+margin-bottom:20px;	
+}
+.footer .column1 a
+{
+display:block;
+text-decoration:none;
+color:#777;
+font-size:15px;
+margin-bottom:10px;	
+}
+.footer .column1 a:hover
+{
+text-decoration:underline;
+}
+.footer .column2 a
+{
+display:block;
+text-decoration:none;
+color:#777;
+font-size:15px;
+margin-bottom:10px;	
+}
+.footer .column2 a:hover
+{
+text-decoration:underline;
+}
+.footer .column3 a
+{
+display:block;
+text-decoration:none;
+color:#777;
+font-size:15px;
+margin-bottom:10px;	
+}
+.footer .column3 a:hover
+{
+text-decoration:underline;
+}
+.footer .column4 a
+{
+display:block;
+text-decoration:none;
+color:#777;
+font-size:15px;
+margin-bottom:10px;	
+}
+.footer .column4 a:hover
+{
+text-decoration:underline;
+}
+.foooter .row
+{
+align-items:flex-start;
+padding:10px 0px;	
+}
+.column1
+{
+height:150px;
+margin-left:11.5%;
+width:15%;
+}
+.column2
+{
+height:150px;
+margin-left:31.5%;
+margin-top:-170px;
+width:15%;
+}
+.column3
+{
+height:150px;
+margin-left:51.5%;
+margin-top:-150px;
+width:15%;
+}
+.column4
+{
+height:150px;
+margin-left:71.5%;
+width:15%;
+margin-top:-160px;
+}
+.row
+{
+height:150px;
+position:absolute;
+width:100%;	
+}
+#SELECT-2
+{
+color:white;
+background:black;	
+height:30px;
+width:120px;	
+border-radius:2px;
+border-width:1px;
+position:absolute;
+left:175px;
+top:175px;
+font-family:poppins;
+font-size:14px;
+text-align:center;
+padding:2px 2px 4px;
+}
+.dropdown
+{
+position: relative;
+display: inline-block;
+}
+
+.dropbtn 
+{
+color:white;
+padding:5px;
+cursor:pointer;
+text-decoration:none; 
+}
+
+.dropdown-content 
+{
+display: none;
+position: absolute;
+top:335px;
+font-size:15px;
+min-width:350px;
+left:55px;
+}
+
+.dropdown-content a 
+{
+color:#777;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover 
+{
+background-color:#ffffff29;
+}
+
+.show 
+{
+display: block;
+}
+</style>
+<script>
+function toggleDropdown() 
+{
+var dropdown = document.getElementById("myDropdown");
+dropdown.classList.toggle("show");
+}
+window.onclick = function(event) 
+{
+if (!event.target.matches('.dropbtn')) 
+{
+var dropdowns = document.getElementsByClassName("dropdown-content");
+var i;
+for (i = 0; i < dropdowns.length; i++) 
+{
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) 
+{
+openDropdown.classList.remove('show');
+}
+}
+}
+}
+</script>
+</head>
+<body>
+<div id="MAIN">
+<div id="M">
+<div id="nav">
+<a href="Netflix-clone.html"><img src="NFL.png" id="I1"></img></a>
+<div id="F1">
+<form>
+<p id="P1">Sign In</p>
+<input type="Email" id="EM" placeholder="Email or phone number" required>
+<input type="Password" id="PS" placeholder="Password" maxlength="20" required>
+<input type="Submit" id="B1" value="Sign In">
+<ul>
+<li>
+<input type="checkbox" class="CH" required><span class="S1">Remember me</span>
+</li>
+<li>
+<a href="#"><p id="P2">Need help?</p></a>
+</li>
+</ul>
+<p id="P3">New to Netflix? <a href="#">Sign Up now.</a></p>
+<p id="P4">Sign in is protected by Google reCAPTCHA to ensure you’re not a bot. <a href="#" onclick="toggleDropdown()" class="dropbtn">Learn more.</a></p> 
+<div class="dropdown">
+<div class="dropdown-content" id="myDropdown">
+<a href="#">The information collected by Google reCAPTCHA is subject to the Google Privacy Policy and Terms of Service, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalised advertising by Google).</a>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="footer">
+<h2>Questions? Call <a href="#">000-800-919-1694</a></h2>
+<div class="row">
+<div class="column1">
+<a href="#">FAQ</a>
+<a href="#">Cookies Prefrences</a>
+</div>
+<div class="column2">
+<a href="#">Help Center</a>
+<a href="#">Corporate Information</a>
+</div>
+<div class="column3">
+<a href="#">Terms of Use</a>
+</div>
+<div class="column4">
+<a href="#">Privacy</a>
+</div>
+</div>
+<select id="SELECT-2">
+<option>English</option>
+<option>हिन्दी</option>
+</select>
+</div>
+</div>
+</body>
