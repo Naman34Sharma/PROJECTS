@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("BG.jpg");  
+    color: white;
+    font-family: poppins;
+    animation-name: slideshow;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.left
+{
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 15px;
+}
+
+.left img
+{
+   width: 100px;
+   border-radius: 50%;
+   box-shadow: 0px 0px 8px black;
+   transition: 2s;
+   animation-name: Rotate;
+   animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   
+}
+
+.left img:hover
+{
+    transform: scale(1.2,1.2) rotate(360deg);
+    cursor: pointer;
+    
+}
+
+
+.mid
+{
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.right
+{
+    display: inline;
+    position: absolute;
+    right: 34px;
+    top: 23px;
+}
+
+.navbar
+{
+    display: inline-block;
+    cursor: pointer;
+}
+.navbar li
+{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.navbar li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 34px 25px;
+    transition: 0.5s;
+}
+
+.navbar li a:hover
+{
+    color: rgba(189, 175, 175, 0.815);
+}
+
+.btn
+{
+    margin: 0 9px;
+    color: white;
+    background-color: black;
+    padding : 8px 14px;
+    border: 2px solid rgba(108, 101, 101, 0.456);
+    border-radius: 10px;
+    font-size: 16.5px;
+    cursor: pointer;
+    font-family: poppins;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.btn:hover
+{
+    background-color: gray;
+    transform: scale(1.1,1.1);
+}
+
+.container
+{
+    /* border: 2px solid rgba(0, 0, 0, 0.722); */
+    margin: 95px 85px;
+    padding: 45px;
+    width: 22%;
+    border-radius: 2px;
+    color: white;
+    background-color: #00000069;
+}
+
+.formGroup
+{
+    margin-bottom: 24px;
+    font-size: 17px;
+    font-family: poppins;
+    width: 70%;
+}
+
+.container h1
+{
+    font-size: 28px;
+    margin-top: -2px;
+}
+
+.S1
+{
+    font-size: 17px;
+    font-family: poppins;
+}
+
+.S2
+{
+    font-size: 17px;
+    font-family: poppins;
+    margin-left: 5px;
+}
+
+.S3
+{
+    font-size: 17px;
+    font-family: poppins;
+    margin-left: 10px;
+}
+
+.container button
+{
+    margin-left: 0px;
+}
+
+@keyframes slideshow
+{
+    0%
+    {
+        background-image: url("BG.jpg");
+    }
+    25%
+    {
+        background-image: url("BG2.jpg");
+    }
+    50%
+    {
+        background-image: url("BG3.jpg");
+    }
+    75%
+    {
+        background-image: url("BG4.jpg");
+    }
+    100%
+    {
+        background-image: url("BG.jpg");
+    }
+}
+
+@keyframes Rotate
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+

@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("BG.jpg");  
+}
+.navbar {
+    flex-direction: column;
+    margin-top: 20vh;
+    margin-left:-10vw;
+}
+
+.left img
+{
+    position: absolute;
+    left:30vw;
+   
+}
+
+.container{
+    width: 50vw; 
+    margin-left: 13%;
+    margin-top: 2vh;
+    border-radius: 10px;
+}
+
+.container h1{
+    font-size: 15px;
+}
+
+.btn{
+    font-size: 17px;
+    padding: 4px 8px;
+}
+
+.formGroup
+{
+    margin-bottom: 18px;
+    font-size: 12px;
+    font-family: poppins;
+    width: 100%;
+}
+
+.S1
+{
+    font-size: 11px;
+    font-family: poppins;
+}
+
+.S2
+{
+    font-size: 11px;
+    font-family: poppins;
+    margin-left: 2px;
+}
+
+.S3
+{
+    font-size: 11px;
+    font-family: poppins;
+    margin-left: 4px;
+}
+
+.right button
+{
+    display: flex;
+    margin-bottom: 6px;
+    margin-right: -25px;
+    font-size: 15px;
+    padding: 4px 8px;
+}
